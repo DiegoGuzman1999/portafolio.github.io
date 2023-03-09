@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Diego</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive"onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+          <div class="contenedor-img">
+              <img src="img/Diego.png"alt="">
+          </div>
+          <h1>DIEGO PENAGOS</h1>
+          <h2>Desarrollador de Software- Ing.sistema</h2>    
+          <div class="redes">
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               <a href="#"><i class="fa-brands fa-skype"></i></a>
+               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+               <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+       </div>
+    </section>
+
+    <!--SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Diego Penagos.</span> Me apasiona la tecnología y el mundo del desarrollo que considero que tiene un gran impacto e influencia en nuestras vidas, nuestros comportamientos y nuestras decisiones ademas me gusta analizar y sacar conclusiones tanto personal como profesionalmente para lograr los mejores resultados posibles.
+            Mi objetivo es desarrollar mi carrera profesional como tecnólogo de desarrollo de software e ingeniería de sistema formando parte de una empresa que me permita aplicar todo lo aprendido hasta ahora y seguir creciendo tanto personal como profesionalmente para lograr los mejores resultados posibles.
+            </p>
+
+            <div class="fila">
+                <!--datos personlaes-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                   <ul>
+                      <li>
+                        <strong>Cumpleaños</strong>
+                        14-02-1999
+                      </li>
+                      <li>
+                        <strong>Telefono</strong>
+                        (+57) 322-807-3533
+                      </li>
+                      <li>
+                        <strong>Email</strong>
+                        diegopenagos984@gmail.com
+                      </li>
+                      <li>
+                        <strong>Website</strong>
+                        www.example.xom
+                      </li>
+                      <li>
+                        <strong>Direccion</strong>
+                        Calle 18a # 7-07,Colombia
+                      </li>
+                      <li>
+                        <strong>Cargo</strong>
+                        <span>TI EN PROCESO</span>
+                      </li>
+                    </ul>
+               </div>
+
+              <!-- intereses-->
+              <div class="col">
+                   <h3> Intereses</h3>
+                   <div class="contenedor-intereses">
+                       <div class="interes">
+                         <i class="fa-solid fa-laptop-code"></i>                            
+                          <span>CIENCIA</span>
+                       </div>
+                       <div class="interes">
+                          <i class="fa-solid fa-gamepad"></i>
+                          <span> JUEGOS</span>
+                        </div> 
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>                           
+                            <span>LIBROS</span>
+                        </div> 
+                       <div class="interes">
+                           <i class="fa-solid fa-headphones"></i>
+                           <span>MUSICA</span>
+                        </div>   
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div> 
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>CINE</span>
+                        </div>  
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>                            
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera-retro"></i>                            
+                            <span>fOTOS</span>
+                        </div>
+                   </div>
+              </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+          <h2>Skills</h2>
+          <div class="fila">
+               <!-- Technical Skill -->
+               <div class="col">
+                  <h3> Technical Skills</h3>
+                   <div class="skill">
+                      <span> Javascript</span>
+                      <div class="barra-skill">
+                           <div class="progreso">
+                              <span>50%</span>
+                           </div>
+                      </div>  
+                   </div>
+                   <div class="skill">
+                       <span> HTML</span>
+                       <div class="barra-skill">
+                          <div class="progreso">
+                              <span>75%</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                               <span>65%</span>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="skill">
+                    <span> SQL</span>
+                      <div class="barra-skill">
+                          <div class="progreso ">
+                             <span>45%</span>
+                           </div>
+                      </div>
+                   </div>
+                   <div class="skill">
+                    <span> UX/UI Designer</span>
+                      <div class="barra-skill">
+                          <div class="progreso ">
+                             <span>65%</span>
+                           </div>
+                      </div>
+                   </div>
+               </div>
+               <!-- Professional Skills-->
+               <div class="col">
+                    <h3> Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion </span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>95%</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo En Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion </span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span> Proyecto Management </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                               <span>85%</span>
+                           </div>
+                       </div>
+                   </div>
+              </div>     
+           </div>        
+        </div>
+    </section>
+
+    <!--SECCION CURRICULUM--> 
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4> Tecnologo Desarrollo De Sofware</h4>
+                        <span class="casa">Universidad Surcolombiana</span>
+                        <span class="fecha">2016 - 2020</span>
+                        <p>En esta estapa pude formarme como profesional con calidad humana y social,donde las herramientas y competencia fueron muy fundamentales para apoyar el desarrollo 
+                        de la industria del software aprovechando al maximo la educacion superior y siendo autodidacta aprediendo de plataforma virtuales que ayudaron a reforsar nuevos
+                        conocimientos de programacion como el manejo de tecnologias que soportan el desarrollo software,habilidades de comunicacion oral y escrita,habilidades para el
+                        analisis,diseño y desarrollo de aplicativos de software, jerarquizacion y diseño de sitios y paginas web
+                        para cada actividad dentro de la industria</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Ingeniería De Sistema </h4>
+                        <span class="casa">Corporacion universitaria del Huila-CORHUILA</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Ingeniero en sistema en formacion ampliando mis conocimientos,habilidades y destrezas para diagnosticar,diseñar,construir,evaluar y mantener sistemas y procesos
+                        de informacion con el apoyo de las tecnologias informaticas ayudando a la organizaciones y empresas a lograr mayor beneficio posible de su equipo y los procesos,
+                        todo en un marco administrativo,empresarial y humanista</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>ADMINISTRADOR</h4>
+                        <span class="casa"> FLORA GB</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>Supervisar las actividades administrativas de la empresa en la cual determino las prioridades de compra y desarrollo un analisis para garantizar que el funcionamiento
+                        de la empresa sea eficiente,ademas de mantener un nivel elevado de produccion, productividad, calidad y estandares del servicio al cliente tambien me encargo 
+                        dirigir y coordinar las operaciones diarias de la empresa 
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4> Desarrollador TI</h4>
+                        <span class="casa">EDTEAM</span>
+                        <span class="fecha">2016 - 2023 </span>
+                        <p>Durante la etapa universitaria he formado parte de semilleros y capacitaciones, donde he podido desarrollar mis habilidades como programador. 
+                        Al mismo tiempo, he compaginado mis estudios con plataformas virtuales como EDteam y udemy desarrollando mis capacidades en las nuevas tecnología 
+                        y lenguajes de programación. Mi objetivo es desarrollar mi carrera profesional formando parte de una empresa que me permita aplicar todo lo aprendido hasta ahora 
+                        y seguir creciendo tanto personal como profesionalmente para lograr los mejores resultados posibles. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                  <img src="img/p1.jpg" alt="">
+                  <div class="overlay">
+                       <h3>Diseño Creativo</h3>
+                       <p>Fotografia</p>
+                    </div>
+               </div>   
+               <div class="proyecto">
+                  <img src="img/p2.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Diseño Creativo</h3>
+                      <p>Fotografia</p>
+                  </div>
+               </div>  
+               <div class="proyecto">
+                  <img src="img/p3.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Diseño Creativo</h3>
+                      <p>Fotografia</p>
+                  </div>
+               </div> 
+               <div class="proyecto">
+                  <img src="img/p4.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Diseño Creativo</h3>
+                      <p>Fotografia</p>
+                  </div>
+               </div> 
+               <div class="proyecto">
+                   <img src="img/p5.jpg" alt="">
+                   <div class="overlay">
+                      <h3>Diseño Creativo</h3>
+                      <p>Fotografia</p>
+                  </div>
+               </div>   
+               <div class="proyecto">
+                  <img src="img/p6.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Diseño Creativo</h3>
+                      <p>Fotografia</p>
+                  </div>
+               </div>      
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Neiva(Huila), Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 322-807-3533
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: diegopenagos984@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
